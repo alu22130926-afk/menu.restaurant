@@ -205,7 +205,7 @@
         <div class="aviso">
             <p>Todos nuestros tacos y platillos se preparan al momento. 
             El tiempo de espera puede variar según la afluencia.<br>
-            !Gracias por su comprensión!</p>
+            ¡Gracias por su comprensión!</p>
         </div>
     </section>
 
@@ -412,20 +412,18 @@
     <script>
 
 function cambiarSeccion(seccionId, botonId) {
-    // 1. Ocultar todas las secciones
     document.getElementById('Seccion_comida').style.display = 'none';
     document.getElementById('Seccion_bebida_extras').style.display = 'none';
 
-    // 2. Mostrar la sección que el usuario eligió
     document.getElementById(seccionId).style.display = 'block';
 
     // 3. Quitar la clase 'activo' de todos los botones
     document.getElementById('btn-comida').classList.remove('activo');
     document.getElementById('btn-bebida').classList.remove('activo');
 
-    // 4. Poner la clase 'activo' solo al botón presionado
     document.getElementById(botonId).classList.add('activo');
 }
 </script>
 </body>
+
 </html>
