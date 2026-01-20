@@ -27,8 +27,24 @@
             display: block;
             max-width: 600px;
             margin: 0 auto 40px auto;
+            gap: 20px;
             
         }
+
+
+        .horario{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+            gap: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
 
         body {
 
@@ -44,7 +60,7 @@
         padding: 15px;
         border-radius: 10px;    
         box-shadow: 0 2px 5px rgba(40, 29, 29, 0.277); /* Sombra suave */
-    }
+        }
 
         .producto img{
 
@@ -145,6 +161,14 @@
 
     </header>
 
+    <br>
+    <section id="Seccion_Horario">
+        <div class="horario">
+            <p><b> Lunes a Jueves </b><br> 6:00 pm a 1:00 am</p>
+            <p><b> Viernes y Sabado </b><br>6:00 pm a 2:30 am</p>
+            <p><b> Domingo </b><br> 6:00 am a 1:00 am</p>
+        </div>
+    </section>
 
     <div class="botones">
     <button id="btn-comida" class="boton-tab activo" onclick="cambiarSeccion('Seccion_comida', 'btn-comida')">Platillos</button>
@@ -269,15 +293,19 @@
     <footer>
         
             <div class="maps">
-            <a target="_blank" href="https://www.google.com/maps/place/Taquer%C3%ADa+los+fuertes/@25.5710952,-103.4342395,17z/data=!3m1!4b1!4m6!3m5!1s0x868fdbf38a5f1cbf:0x80a2e9a6d86b5b20!8m2!3d25.5710952!4d-103.4316646!16s%2Fg%2F11k9jq5blk?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"><img src="img/maps.png" width="40px"><p>Jacarandas</p></a><br>
-            </div>
-            
-            <div class="maps">
-            <a target="_blank" href="https://www.google.com/maps/place/Los+Fuertes/@25.5988624,-103.3834872,14.96z/data=!3m1!5s0x868fdaaefd210c7f:0x792c228f2514963a!4m10!1m2!2m1!1slos+fuertes!3m6!1s0x868fdb9568ee7531:0x5fdde41f0169f6de!8m2!3d25.6037165!4d-103.3672105!15sCgtsb3MgZnVlcnRlc1oNIgtsb3MgZnVlcnRlc5IBD3RhY29fcmVzdGF1cmFudOABAA!16s%2Fg%2F11t3vcy1xr?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"><img src="img/maps.png" width="40px"><p>Fraccionamiento Ana</p></a>
+                <a target="_blank" href="https://www.google.com/maps/place/Taquer%C3%ADa+los+fuertes/@25.5710952,-103.4342395,17z/data=!3m1!4b1!4m6!3m5!1s0x868fdbf38a5f1cbf:0x80a2e9a6d86b5b20!8m2!3d25.5710952!4d-103.4316646!16s%2Fg%2F11k9jq5blk?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"><img src="img/maps.png" width="40px"><p>Jacarandas</p></a><br>
             </div>
 
             <div class="tel">
-            <img src="img/telefono.png" width="40px"><p>   #1234567890</p>
+                <img src="img/telefono.png" width="40px"><p>#871 399 7279</p>
+            </div>
+            
+            <div class="maps">
+                <a target="_blank" href="https://www.google.com/maps/place/Los+Fuertes/@25.5988624,-103.3834872,14.96z/data=!3m1!5s0x868fdaaefd210c7f:0x792c228f2514963a!4m10!1m2!2m1!1slos+fuertes!3m6!1s0x868fdb9568ee7531:0x5fdde41f0169f6de!8m2!3d25.6037165!4d-103.3672105!15sCgtsb3MgZnVlcnRlc1oNIgtsb3MgZnVlcnRlc5IBD3RhY29fcmVzdGF1cmFudOABAA!16s%2Fg%2F11t3vcy1xr?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"><img src="img/maps.png" width="40px"><p>Fraccionamiento Ana</p></a>
+            </div>
+
+            <div class="tel">
+                <img src="img/telefono.png" width="40px"><p>#871 177 1580</p>
             </div>
 
             <p font-size="10px">2026 Tacos Los Fuertes. Todos los derechos reservados</p>
