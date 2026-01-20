@@ -205,7 +205,7 @@
         <div class="aviso">
             <p>Todos nuestros tacos y platillos se preparan al momento. 
             El tiempo de espera puede variar según la afluencia.<br>
-            ¡Gracias por su comprensión!</p>
+            !Gracias por su comprensión!</p>
         </div>
     </section>
 
@@ -217,7 +217,8 @@
     <section id="Seccion_comida"> <!-- Section de platillos -->
         <div class="producto">
             <img src="img/tacos.png" width="110px">
-            <p><b>Orden de Tacos</b><br>(5 tacos al pastor con cebolla, piña y cilantro)</p>
+            <p><b>Orden de Tacos</b><br>(5 tacos al pastor con cebolla, piña y cilantro).<br>
+            <b>Martes, Miercoles y Domingo 2x1</b></p>
             <div class="cuadrado2"><strong>$80</strong></div> 
         </div>
 
@@ -392,7 +393,7 @@
     <footer>
         
             <div class="maps">
-                <a target="_blank" href="https://www.google.com/maps/place/Taquer%C3%ADa+los+fuertes/@25.5710952,-103.4342395,17z/data=!3m1!4b1!4m6!3m5!1s0x868fdbf38a5f1cbf:0x80a2e9a6d86b5b20!8m2!3d25.5710952!4d-103.4316646!16s%2Fg%2F11k9jq5blk?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"><img src="img/maps.png" width="40px"><p>Jacarandas</p></a><br>
+                <a target="_blank" href="https://www.google.com/maps/place/Taquer%C3%ADa+los+fuertes/@25.5710952,-103.4342395,17z/data=!3m1!4b1!4m6!3m5!1s0x868fdbf38a5f1cbf:0x80a2e9a6d86b5b20!8m2!3d25.5710952!4d-103.4316646!16s%2Fg%2F11k9jq5blk?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"><img src="img/maps.png" width="40px"><p>Fraccionamiento El Tajito</p></a>
             </div>
 
             <div class="tel">
@@ -400,7 +401,8 @@
             </div>
             
             <div class="maps">
-                <a target="_blank" href="https://www.google.com/maps/place/Los+Fuertes/@25.5988624,-103.3834872,14.96z/data=!3m1!5s0x868fdaaefd210c7f:0x792c228f2514963a!4m10!1m2!2m1!1slos+fuertes!3m6!1s0x868fdb9568ee7531:0x5fdde41f0169f6de!8m2!3d25.6037165!4d-103.3672105!15sCgtsb3MgZnVlcnRlc1oNIgtsb3MgZnVlcnRlc5IBD3RhY29fcmVzdGF1cmFudOABAA!16s%2Fg%2F11t3vcy1xr?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"><img src="img/maps.png" width="40px"><p>Fraccionamiento Ana</p></a>
+                <a target="_blank" href="https://www.google.com/maps/place/Los+Fuertes/@25.5988624,-103.3834872,14.96z/data=!3m1!5s0x868fdaaefd210c7f:0x792c228f2514963a!4m10!1m2!2m1!1slos+fuertes!3m6!1s0x868fdb9568ee7531:0x5fdde41f0169f6de!8m2!3d25.6037165!4d-103.3672105!15sCgtsb3MgZnVlcnRlc1oNIgtsb3MgZnVlcnRlc5IBD3RhY29fcmVzdGF1cmFudOABAA!16s%2Fg%2F11t3vcy1xr?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D"><img src="img/maps.png" width="40px">
+                    <p>NN</p></a>
             </div>
 
             <div class="tel">
@@ -412,18 +414,20 @@
     <script>
 
 function cambiarSeccion(seccionId, botonId) {
+    // 1. Ocultar todas las secciones
     document.getElementById('Seccion_comida').style.display = 'none';
     document.getElementById('Seccion_bebida_extras').style.display = 'none';
 
+    // 2. Mostrar la sección que el usuario eligió
     document.getElementById(seccionId).style.display = 'block';
 
     // 3. Quitar la clase 'activo' de todos los botones
     document.getElementById('btn-comida').classList.remove('activo');
     document.getElementById('btn-bebida').classList.remove('activo');
 
+    // 4. Poner la clase 'activo' solo al botón presionado
     document.getElementById(botonId).classList.add('activo');
 }
 </script>
 </body>
-
 </html>
