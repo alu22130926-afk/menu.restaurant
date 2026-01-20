@@ -68,11 +68,33 @@
             border-radius: 100px;
         }
 
+        .orMedia{
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #333;
+            margin-left: auto;
+        }
 
         .cuadrado{
 
-            width: 50px;
-            height: 50px;
+            width: 37px;
+            height: 37px;
+            background-color: #f1c40f; 
+            display: flex;
+            justify-content: center;  
+            align-items: center;  
+            vertical-align: middle; 
+            border-radius: 50%;
+            flex-shrink: 0; 
+        }
+
+        .cuadrado2{
+
+            width: 37px;
+            height: 37px;
             background-color: #f1c40f; 
             display: flex;
             justify-content: center;  
@@ -81,8 +103,6 @@
             border-radius: 50%;
             margin-left: auto;
             flex-shrink: 0; 
-
-
         }
         footer {   
             display: flex;  
@@ -179,112 +199,162 @@
         <div class="producto">
             <img src="img/tacos.png" width="110px">
             <p><b>Orden de Tacos</b><br>(5 tacos al pastor con cebolla, piña y cilantro)</p>
-            <div class="cuadrado"><strong>$80</strong></div> 
+            <div class="cuadrado2"><strong>$80</strong></div> 
         </div>
 
         <div class="producto">
             <img src="img/ToñosEsp.png" width="100px">
             <p><b>Toños Especial</b> <br>(Pastor, bistec, chorizo, tocino, jamón, cebolla, queso y tortillas)</p>
-            <div class="cuadrado"><strong>$125<br>$85</strong></div> 
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$125</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$85</strong></div> 
+            </div>
         </div>
 
         <div class="producto">
             <img src="img/bistek.png" width="100px">
-            <p><b>Bistec</b><br> (Bistec preparado con nuestra receta especial)</p>
-            <div class="cuadrado"><strong>$100</strong></div> 
+            <p><b>Bistec</b><br> (Bistec preparado con nuestra receta especial servido en tortillas de maíz)</p>
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$145</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$95</strong></div> 
+            </div>
         </div>
 
         <div class="producto">
             <img src="img/sabores.png" width="100px">
             <p><b>Sabores</b> <br>(Pastor, bistec, piña, chorizo, aguacate y queso servido en tortilla de maiz)</p>
-            <div class="cuadrado"><strong>$100</strong></div> 
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$125</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$85</strong></div> 
+            </div>
         </div>
 
         <div class="producto">
             <img src="img/Ya vas.png" width="100px">
             <p><b>Ya Vas</b><br> (Bistec, tocino, cebolla, jamón, morrón, tomate, aguacate, queso y tortillas)</p>
-            <div class="cuadrado"><strong>$100</strong></div> 
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$135</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$85</strong></div> 
+            </div>
         </div>
 
         <div class="producto">
             <img src="img/que me ves.png" width="100px">
             <p><b>Que Me Ves</b><br> (Pastor, bistec, tocino, jamon, cebolla, morrón, en quesadilla con 4 tortillas de harina)</p>
-            <div class="cuadrado"><strong>$100</strong></div> 
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$135</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$85</strong></div> 
+            </div> 
         </div>
 
         <div class="producto">
             <img src="img/gringa.png" width="100px">
             <p><b>Gringa</b> <br>(Nuestra deliciosa carne al pastor en quesadilla con 4 tortillas de harina)</p>
-            <div class="cuadrado"><strong>$100</strong></div> 
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$135</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$85</strong></div> 
+            </div> 
         </div>
 
         <div class="producto">
             <img src="img/gabacha.png" width="100px">
             <p><b>Gabacha</b><br> (Deliciosa carne al pastor con queso servido con tortilla de maíz)</p>
-            <div class="cuadrado"><strong>$100</strong></div> 
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$125</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$85</strong></div> 
+            </div> 
         </div>
 
         <div class="producto">
             <img src="img/alambre.png" width="100px">
             <p><b>Alambre</b><br> (Bistec, tocino, jamón, cebolla, morrón, queso y tortillas de maiz)</p>
-            <div class="cuadrado"><strong>$100</strong></div> 
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$135</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$85</strong></div> 
+            </div>
         </div>
 
         <div class="producto">
             <img src="img/sarape.png" width="100px">
             <p><b>Sarape</b><br> (Pastor, bistec, chorizo, tocino, jamón, morrón, cebolla, piña, tomate y queso))</p>
-            <div class="cuadrado"><strong>$100</strong></div> 
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$125</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$85</strong></div> 
+            </div>
         </div>
     </section>
 
     <section id="Seccion_bebida_extras"> <!-- Section de platillos, bebidas y extras -->
-        
-        <div class="producto">
-            <img src="img/cebollitas.png" width="100px">
-            <p><b>Cebollitas</b><br> (Orden de cebollitas asadas)</p>
-            <div class="cuadrado"><strong>$30</strong></div> 
-        </div>
-
-        <div class="producto">
-            <img src="img/extras.png" width="100px">
-            <p><b>Extra</b><br> (Cada ingrediente extra tiene un precio de $5 pesos)</p>
-            <div class="cuadrado"><strong>$5</strong></div> 
-        </div>
-
-        <div class="producto">
-            <img src="img/bolsaTotopos.png" width="100px">
-            <p><b>Bolsa de Totopos</b></p>
-            <div class="cuadrado"><strong>$10</strong></div> 
-        </div>
-
-        <div class="producto">
-            <img src="img/bolsaVerdura.png" width="100px">
-            <p><b>Bolsa de Verdura</b></p>
-            <div class="cuadrado"><strong>$10</strong></div> 
-        </div>
 
         <div class="producto">
             <img src="img/agua.jpg" width="100px">
             <p><b> Agua de sabor de 1L</b><br> (distintos sabores)</p>
-            <div class="cuadrado"><strong>$30</strong></div> 
+            <div class="cuadrado2"><strong>$30</strong></div> 
         </div>
 
         <div class="producto">
             <img src="img/coca.png" width="100px">
             <p><b> Refresco de 600ml</b><br> (Coca Cola o refresco de sabor)</p>
-            <div class="cuadrado"><strong>$30</strong></div> 
+            <div class="cuadrado2"><strong>$30</strong></div> 
         </div>
         
         <div class="producto">
             <img src="img/cocaVidrio.jpeg" width="100px">
             <p><b> Coca Cola de vidrio de 355ml</b></p>
-            <div class="cuadrado"><strong>$25</strong></div> 
+            <div class="cuadrado2"><strong>$25</strong></div> 
         </div>
 
         <div class="producto">
             <img src="img/ciel.jpg" width="100px">
             <p><b>Agua Ciel natural de 1L</b></p>
-            <div class="cuadrado"><strong>$25</strong></div> 
+            <div class="cuadrado2"><strong>$25</strong></div> 
+        </div>
+
+        <div class="producto">
+            <img src="img/cebollitas.png" width="100px">
+            <p><b>Cebollitas</b><br> (Orden de cebollitas asadas)</p>
+            <div class="orMedia">
+                <p><b>Orden</b></p>
+                <div class="cuadrado"><strong>$30</strong></div> 
+                <p><b>Media</b></p>
+                <div class="cuadrado"><strong>$20</strong></div> 
+            </div> 
+        </div>
+
+        <div class="producto">
+            <img src="img/extras.png" width="100px">
+            <p><b>Extra</b><br> (Cada ingrediente extra tiene un precio de $5 pesos)</p>
+            <div class="cuadrado2"><strong>$5</strong></div> 
+        </div>
+
+        <div class="producto">
+            <img src="img/bolsaTotopos.png" width="100px">
+            <p><b>Bolsa de Totopos</b></p>
+            <div class="cuadrado2"><strong>$10</strong></div> 
+        </div>
+
+        <div class="producto">
+            <img src="img/bolsaVerdura.png" width="100px">
+            <p><b>Bolsa de Verdura</b></p>
+            <div class="cuadrado2"><strong>$10</strong></div> 
         </div>
 
         
