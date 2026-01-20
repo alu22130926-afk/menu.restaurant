@@ -45,11 +45,25 @@
             font-family: 'Montserrat', sans-serif;
         }
 
+        .aviso{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: white;
+            border-radius: 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+            gap: 20px;
+            font-family: 'Montserrat', sans-serif;
+            border-left: 10px solid red;
+            padding-left: 5px;
+        }
 
         body {
 
             font-family: 'Montserrat', sans-serif; 
-            background-color: #e5a2a2;
+            background-color: #f7a726;
         }
         .producto {
         display: flex;          
@@ -59,7 +73,7 @@
         gap: 20px;
         padding: 15px;
         border-radius: 10px;    
-        box-shadow: 0 2px 5px rgba(40, 29, 29, 0.277); /* Sombra suave */
+        box-shadow: 0 2px 5px rgba(40, 29, 29, 0.277); 
         }
 
         .producto img{
@@ -76,8 +90,13 @@
             justify-content: center;
             color: #333;
             margin-left: auto;
+            gap: 0px;
         }
 
+        .orMedia p{
+
+            margin: 0px;
+        }
         .cuadrado{
 
             width: 37px;
@@ -182,11 +201,11 @@
     </header>
 
     <br>
-    <section id="Seccion_Horario">
-        <div class="horario">
-            <p><b> Lunes a Jueves </b><br> 6:00 pm a 1:00 am</p>
-            <p><b> Viernes y Sabado </b><br>6:00 pm a 2:30 am</p>
-            <p><b> Domingo </b><br> 6:00 am a 1:00 am</p>
+    <section id="Seccion_Aviso">
+        <div class="aviso">
+            <p>Todos nuestros tacos y platillos se preparan al momento. 
+            El tiempo de espera puede variar según la afluencia.<br>
+            !Gracias por su comprensión!</p>
         </div>
     </section>
 
@@ -306,7 +325,7 @@
 
         <div class="producto">
             <img src="img/agua.jpg" width="100px">
-            <p><b> Agua de sabor de 1L</b><br> (distintos sabores)</p>
+            <p><b> Agua de sabor de 1L</b><br> (Distintos sabores)</p>
             <div class="cuadrado2"><strong>$30</strong></div> 
         </div>
 
@@ -360,6 +379,16 @@
         
     </section>
 
+
+    <section id="Seccion_Horario">
+        <div class="horario">
+            <p><b> Lunes a Jueves </b><br> 6:00 pm a 1:30 am</p>
+            <p><b> Viernes y Sabado </b><br>6:00 pm a 2:30 am</p>
+            <p><b> Domingo </b><br> 6:00 am a 1:30 am</p>
+        </div>
+    </section>
+
+
     <footer>
         
             <div class="maps">
@@ -367,7 +396,7 @@
             </div>
 
             <div class="tel">
-                <img src="img/telefono.png" width="40px"><p>#871 399 7279</p>
+                <img src="img/telefono.png" width="40px"><p># 871 399 7279</p>
             </div>
             
             <div class="maps">
@@ -375,7 +404,7 @@
             </div>
 
             <div class="tel">
-                <img src="img/telefono.png" width="40px"><p>#871 177 1580</p>
+                <img src="img/telefono.png" width="40px"><p># 871 177 1580</p>
             </div>
 
             <p font-size="10px">2026 Tacos Los Fuertes. Todos los derechos reservados</p>
